@@ -29,23 +29,23 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
-              <Route path="posts/:id" element={<PostPage />} />
-              <Route path="tech" element={<Tech />} />
-              <Route path="science" element={<Science />} />
-              <Route path="reviews" element={<Reviews />} />
-              <Route path="entertainment" element={<Entertainment />} />
-              <Route path="search" element={<Search />} />
+              <Route path="/posts/:id" element={<PostPage />} />
+              <Route path="/tech" element={<Tech />} />
+              <Route path="/science" element={<Science />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/entertainment" element={<Entertainment />} />
+              <Route path="/search" element={<Search />} />
             </Route>
             <Route path="/" element={<LayoutNoSidebar />}>
-              <Route path="login" element={<LoginPage />} />
-              <Route path="register" element={<Register />} />
-              <Route path="recover-username" element={<RecoverUsername />} />
-              <Route path="recover-password" element={<RecoverPassword />} />
-              <Route path="recover/password/:userid/:token" element={<ChangePassword />} />
-              <Route path="dashboard" element={<Dashboard />} />
-              <Route path="create" element={<CreatePost />} />
-              <Route path="edit/:id" element={<EditPost />} />
-              <Route path=":userid/verify/:token" element={<EmailVerify />}/>
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/recover-username" element={<RecoverUsername />} />
+              <Route path="/recover-password" element={<RecoverPassword />} />
+              <Route path="/recover/password/:userid/:token" element={<ChangePassword />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/create" element={<CreatePost />} />
+              <Route path="/edit/:id" element={<EditPost />} />
+              <Route path="/:userid/verify/:token" element={<EmailVerify />}/>
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
