@@ -60,7 +60,7 @@ export default function PostPage() {
   return (
       <div className="post-page">
         <div className="image">
-          <img src={`http://localhost:4000/${postInfo.cover}`} alt="" />
+          <img src={`${process.env.REACT_APP_API_URL}/${postInfo.cover}`} alt="" />
         </div>
         <h1>{postInfo.title}</h1>
         <div className="info">

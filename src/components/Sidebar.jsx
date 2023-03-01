@@ -7,7 +7,7 @@ function MostViewedPost({_id, title, cover, summary, tags}){
     <div className="image">
       <Link to={`/posts/${_id}`}>
         <img
-          src={"http://localhost:4000/" + cover.replaceAll('\\', '/')}
+          src={`${process.env.REACT_APP_API_URL}/` + cover.replaceAll('\\', '/')}
           alt=""
         />
       </Link>
