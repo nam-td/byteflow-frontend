@@ -46,7 +46,7 @@ function App() {
               <Route path="create" element={<CreatePost />} />
               <Route path="edit/:id" element={<EditPost />} />
               <Route path=":userid/verify/:token" element={<EmailVerify />}/>
-              {/* <Route path="*" element={<NotFound />} /> */}
+              <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </SearchContextProvider>
